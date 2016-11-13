@@ -1,0 +1,8 @@
+---
+- hosts: all
+      
+  vars_files:
+    - vars_nginx.yaml
+
+  roles:
+    - role: jdauphant.nginx
