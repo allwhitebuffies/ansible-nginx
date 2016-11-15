@@ -17,5 +17,5 @@ nginx_http_params:
 nginx_sites:
   www.github.com:
     - listen *:8000
-    - server_name localhost
+    - server_name www.{{ vdomain }}
     - return 301 http://{{ vdomain }}$request_uri
